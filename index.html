@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Online Japa</title>
+<meta name="robots" content="all">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#d1981c">
+<meta name="author" content="Āryāshree Pritikṛṣṇa">
+<meta name="description" content="Japa (Sanskrit: जप) is the meditative repetition of a mantra or a divine name. It is a practice found in Hinduism, Jainism, Sikhism, Buddhism, and Shintōism. The mantra or name may be spoken softly, enough for the practitioner to hear it, or it may be spoken within the reciter's mind. Japa may be performed while sitting in a meditation posture, while performing other activities, or as part of formal worship in group settings." />
+<meta name="title" content="Online Japa meditation." />
+<meta name="keywords" content="Japa, Japa 108, Rounds, Japa mala, Mala, Prayer beads, Online japa, Counter, Maha Mantra, Maha Mantra meditation, Hare Krishna" />
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+var add = (function () {
+    var counter = 0;
+    return function () {return counter += 1;}
+})();
+
+function startJapa(){
+    var iBeads = parseInt(document.getElementById('beads').innerHTML, 0);
+    var iRounds = parseInt(document.getElementById('rounds').innerHTML, 0);
+    if(108 == iBeads)
+    {
+        iRounds = isNaN(iRounds) ? 0 : iRounds;
+        iBeads = 0;
+        iRounds++;
+        document.getElementById("rounds").innerHTML = iRounds;
+        document.getElementById("beads").innerHTML = '<span class="beadsStart">Start Japa</span>';
+    }
+    else
+    {
+        iBeads = isNaN(iBeads) ? 0 : iBeads;
+        iBeads++;
+        document.getElementById("beads").innerHTML = iBeads;
+    }
+}
+</script>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="txtBack">Total no of rounds <span id="rounds">0</span></div>
+        <div class="btnBack">
+            <button type="button" onclick="startJapa()" id="beads"><span class="beadsStart">Start Japa</span></button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body
+{
+    background-image:url("Japa_mala.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color:#d1981c;
+    background-size: 100% 100%;
+    font-family: 'Raleway', sans-serif;
+}
+#wrapper {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:200px;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    text-align: center;
+}
+button {
+    background-color: #1C3676;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 50%;
+    font-size: 75px;
+    font-weight: bolder;
+    width: 180px;
+    height: 180px;
+}
+button:focus {
+    outline:0;
+}
+.txtBack {
+   background-color: #1C3676;
+   font-size: 22px;
+   font-weight: bolder;
+   color: #ffffff;
+   border-radius: 15px;
+   padding: 5px;
+}
+div.btnBack {
+    padding: 10px;
+}
+span.beadsStart {
+    font-size: 22px;
+    vertical-align: middle;
+}
