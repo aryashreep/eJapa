@@ -20,3 +20,5 @@ Japa (Sanskrit: जप) is the meditative repetition of a mantra or a divine nam
 #### Benefit 5: You Get the The Most Salient Benefit~ You Understand “The Love of God”
 
 ## The most important benefit of chanting the Hare Krishna mantra is to find God-realization and pure love of God.
+
+URL  http://www.etechbuddy.com/japa/
