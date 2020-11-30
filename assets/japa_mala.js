@@ -1,3 +1,7 @@
+$(".mantrawave").ripples({
+  resolution: 200,
+  perturbance: .004,
+});
 var add = (function () {
     var counter = 0;
     return function () {return counter += 1;}
