@@ -24,11 +24,19 @@
 <script src="./assets/japa_mala.js"></script>
 </head>
 <body>
-    <div id="wrapper" class="mantrawave">
-        <div class="txtBack">Total no of rounds <span id="rounds">0</span></div>
+    <div class="mantrawave">
+      <div id="wrapper">
+        <div class="txtBack">No of rounds </br ><span id="rounds">0</span></div>
         <div class="btnBack">
             <button type="button" onclick="startJapa()" id="beads"><span class="beadsStart">Start Japa</span></button>
         </div>
+      </div>
     </div>
+<script type="text/javascript">
+$(".mantrawave").ripples({
+	resolution: 200,
+	perturbance: .004,
+});
+</script>    
 </body>
 </html>
