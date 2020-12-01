@@ -59,7 +59,7 @@ span.beadsStart {
     transition: background 0.8s;
   }
   .ripple:hover {
-    background: #203b7e radial-gradient(circle, transparent 1%, #203b7e 1%) center/15000%;
+    background: #2a4892 radial-gradient(circle, transparent 1%, #2a4892 1%) center/15000%;
   }
   .ripple:active {
     background-color: #1C3676;
