@@ -17,7 +17,6 @@ body{
     position:fixed;
     top: 50%;
     left: 50%;
-    width:200px;
     transform: translate(-50%, -50%);
     background-color: transparent;
     text-align: center;
@@ -41,16 +40,30 @@ button:focus {
 }
 .txtBack {
    background-color: #1C3676;
-   font-size: 22px;
+   font-size: 18px;
    font-weight: bolder;
    color: #ffffff;
    border-radius: 15px;
    padding: 5px;
 }
 div.btnBack {
-    padding: 10px;
+    padding-top: 10px;
 }
 span.beadsStart {
     font-size: 22px;
     vertical-align: middle;
 }
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+  }
+  .ripple:hover {
+    background: #203b7e radial-gradient(circle, transparent 1%, #203b7e 1%) center/15000%;
+  }
+  .ripple:active {
+    background-color: #1C3676;
+    background-size: 100%;
+    transition: background 0s;
+  }
+  
