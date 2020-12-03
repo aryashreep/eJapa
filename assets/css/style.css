@@ -7,7 +7,7 @@ body{
 .mantrawave{
   width: 100%;
   height: 100vh;
-  background: url(Japa_mala.jpg);
+  background: url("../images/japa_mala.jpg");
   background-position: center center;
   background-repeat: no-repeat;	
   background-size: 100% 100%;
@@ -20,8 +20,9 @@ body{
     transform: translate(-50%, -50%);
     background-color: transparent;
     text-align: center;
+    width: 100%;
 }
-button {
+button#beads{
     background-color: #1C3676;
     border: none;
     color: #ffffff;
@@ -38,13 +39,15 @@ button {
 button:focus {
     outline:0;
 }
-.txtBack {
+button.txtBack {
    background-color: #1C3676;
+   border: none;
    font-size: 18px;
    font-weight: bolder;
    color: #ffffff;
    border-radius: 15px;
    padding: 5px;
+   width: 180px;
 }
 div.btnBack {
     padding-top: 10px;
@@ -67,3 +70,51 @@ span.beadsStart {
     transition: background 0s;
   }
   
+  @keyframes slide {
+    from { left:100%; transform: translate(0, 0); }
+    to { left: -100%; transform: translate(-100%, 0); }
+  }
+  @-webkit-keyframes slide {
+    from { left:100%; transform: translate(0, 0); }
+    to { left: -100%; transform: translate(-100%, 0); }
+  }
+  
+  .marquee { 
+    color:#ffffff;
+    width:100%;
+    height:20px;
+    line-height:18px;
+    overflow:hidden;
+    position:relative;
+    position:absolute;                  
+    bottom:0;                          
+    left:0;
+  }
+  
+  .text {
+    position:absolute;
+    top:0;
+    white-space: nowrap;
+    font-size:20px;
+    font-weight: bolder;
+    animation-name: slide;
+    animation-duration: 70s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: slide;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+
+  .radhakrishna {
+    top: 0%;
+    right: 0%;
+    position: absolute;
+  }
+
+  .chaitanya {
+    bottom: 0%;
+    left: 0%;
+    position: absolute;
+  }
