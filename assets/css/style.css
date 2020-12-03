@@ -23,19 +23,21 @@ body{
     text-align: center;
     width: 100%;
 }
-button#beads{
+button#beadsButton{
     background-color: #1C3676;
     border: none;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
     border-radius: 50%;
-    font-size: 75px;
-    font-weight: bolder;
-    width: 180px;
-    height: 180px;
+}
+#beads{
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 75px;
+  font-weight: bolder;
+  width: 180px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 50%;
 }
 button:focus {
     outline:0;
@@ -93,9 +95,9 @@ span.beadsStart {
     -webkit-transform:translateX(100%);  
     transform:translateX(100%);
     /* Apply animation to this element */ 
-    -moz-animation: slide 35s linear infinite;
-    -webkit-animation: slide 35s linear infinite;
-    animation: slide 35s linear infinite;        
+    -moz-animation: slide 25s linear infinite;
+    -webkit-animation: slide 25s linear infinite;
+    animation: slide 25s linear infinite;        
   }
 
   /* Move it (define the animation) */

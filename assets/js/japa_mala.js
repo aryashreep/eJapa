@@ -11,8 +11,9 @@ function startJapa(){
         iRounds = isNaN(iRounds) ? 0 : iRounds;
         iBeads = 0;
         iRounds++;
+        document.getElementById("beads").style.display = "none";
         document.getElementById("rounds").innerHTML = iRounds;
-        document.getElementById("beads").innerHTML = '<span class="beadsStart">Start Japa</span>';
+        document.getElementById("beadsButton").innerHTML = '<img src="./assets/images/panchatatva_mantra.png" width="180" height="180" id="panchatatva" alt="Panchatatva Mantra" />';
         if (navigator.vibrate) {
             navigator.vibrate(1000);
         }
@@ -21,6 +22,8 @@ function startJapa(){
     {
         iBeads = isNaN(iBeads) ? 0 : iBeads;
         iBeads++;
+        document.getElementById("beads").style.display = "block";
         document.getElementById("beads").innerHTML = iBeads;
+        document.getElementById("panchatatva").style.display = "none";
     }
 }
