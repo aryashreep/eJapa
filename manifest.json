@@ -1,5 +1,5 @@
 {
-  "short_name": "eJapa",
+  "short_name": "Japa",
   "name": "Online Japa",
   "icons": [
     {
@@ -17,11 +17,12 @@
   "start_url": "index.html",
   "background_color": "#1C3676",
   "display": "standalone",
+  "orientation": "portrait",
   "scope": "index.html",
   "theme_color": "#01abfd",
   "shortcuts": [
     {
-      "name": "Online Japa",
+      "name": "Japa",
       "short_name": "eJapa",
       "description": "Online japa for the devotee.",
       "url": "index.html",
