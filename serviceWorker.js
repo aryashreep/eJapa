@@ -9,7 +9,7 @@ const urlsToCache = [
   "./assets/css/style.css",
   "./assets/js/japa_mala.js",
   "./assets/images/chaitanya_desktop.png",
-  "./assets/images/chaitanya_desktop.png",
+  "./assets/images/chaitanya_mobile.png",
   "./assets/images/japa_mala.jpg",
   "./assets/images/panchatatva_mantra.png",
   "./assets/images/radhakrishna_desktop.png",
