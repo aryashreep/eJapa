@@ -1,36 +1,28 @@
 const CACHE_NAME = 'dev-japa-v1';
 const OFFLINE_URL = 'offline.html';
 const urlsToCache = [
-  "/",
-  "/index.html",
+  "./",
+  "./index.html",
   "https://fonts.googleapis.com/css2?family=Raleway&display=swap",
   "https://code.jquery.com/jquery-3.5.1.min.js",
   "https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js",
-  "/assets/css/style.css",
-  "/assets/js/japa_mala.js",
-  "/assets/images/chaitanya_desktop.png",
-  "/assets/images/chaitanya_desktop.png",
-  "/assets/images/japa_mala.jpg",
-  "/assets/images/panchatatva_mantra.png",
-  "/assets/images/radhakrishna_desktop.png",
-  "/assets/images/radhakrishna_mobile.png"
+  "./assets/css/style.css",
+  "./assets/js/japa_mala.js",
+  "./assets/images/chaitanya_desktop.png",
+  "./assets/images/chaitanya_desktop.png",
+  "./assets/images/japa_mala.jpg",
+  "./assets/images/panchatatva_mantra.png",
+  "./assets/images/radhakrishna_desktop.png",
+  "./assets/images/radhakrishna_mobile.png",
+  "./offline.html"
 ];
 
-self.addEventListener('install', function(event) {
-  console.log('[ServiceWorker] Install');
-  
-  event.waitUntil((async () => {
-    const cache = await caches.open(CACHE_NAME);
-    cache.then(function(cache) {
-      console.log('Opened cache');
-      return cache.addAll(urlsToCache);
-    });
-    // Setting {cache: 'reload'} in the new request will ensure that the response
-    // isn't fulfilled from the HTTP cache; i.e., it will be from the network.
-    await cache.add(new Request(OFFLINE_URL, {cache: 'reload'}));
-  })());
-  
-  self.skipWaiting();
+self.addEventListener('install', function (e) {
+  e.waitUntil(
+      caches.open(CACHE_NAME).then(function (cache) {
+          return cache.addAll(urlsToCache);
+      })
+  );
 });
 
 self.addEventListener('activate', (event) => {
