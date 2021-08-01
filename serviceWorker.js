@@ -17,12 +17,15 @@ const urlsToCache = [
   "./offline.html"
 ];
 
-self.addEventListener('install', function (e) {
-  e.waitUntil(
+self.addEventListener('install', function (event) {
+  event.waitUntil(
       caches.open(CACHE_NAME).then(function (cache) {
           return cache.addAll(urlsToCache);
       })
   );
+  // Setting {cache: 'reload'} in the new request will ensure that the response
+  // isn't fulfilled from the HTTP cache; i.e., it will be from the network.
+  await cache.add(new Request(OFFLINE_URL, {cache: 'reload'}));
 });
 
 self.addEventListener('activate', (event) => {

@@ -23,7 +23,7 @@
   "shortcuts": [
     {
       "name": "Japa",
-      "short_name": "eJapa",
+      "short_name": "Japa",
       "description": "Online japa for the devotee.",
       "url": "index.html",
       "icons": [{ "src": "./assets/images/icons/icon-192x192.png", "sizes": "192x192" }]
