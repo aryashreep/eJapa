@@ -3,12 +3,12 @@
   "name": "Online Japa",
   "icons": [
     {
-      "src": "/assets/images/icons/icon-192x192.png",
+      "src": "./assets/images/icons/icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/assets/images/icons/icon-512x512.png",
+      "src": "./assets/images/icons/icon-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
@@ -24,13 +24,13 @@
       "short_name": "eJapa",
       "description": "Online japa for the devotee.",
       "url": "index.html",
-      "icons": [{ "src": "/assets/images/icons/icon-192x192.png", "sizes": "192x192" }]
+      "icons": [{ "src": "./assets/images/icons/icon-192x192.png", "sizes": "192x192" }]
     }
   ],
   "description": "Online japa for the devotee.",
   "screenshots": [
     {
-      "src": "/assets/images/icons/icon-512x512.png",
+      "src": "./assets/images/icons/icon-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
