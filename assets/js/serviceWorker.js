@@ -8,6 +8,7 @@ const urlsToCache = [
   "https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js",
   "./assets/css/style.css",
   "./assets/js/japa_mala.js",
+  "./assets/js/orientation.js",
   "./assets/images/chaitanya_desktop.png",
   "./assets/images/chaitanya_mobile.png",
   "./assets/images/japa_mala.jpg",
