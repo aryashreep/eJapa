@@ -1,21 +1,21 @@
 const CACHE_NAME = 'dev-japa-v1';
 const OFFLINE_URL = 'offline.html';
 const urlsToCache = [
-  "./",
-  "./index.html",
+  "../../",
+  "../../index.html",
   "https://fonts.googleapis.com/css2?family=Raleway&display=swap",
   "https://code.jquery.com/jquery-3.5.1.min.js",
   "https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js",
-  "./assets/css/style.css",
-  "./assets/js/japa_mala.js",
-  "./assets/js/orientation.js",
-  "./assets/images/chaitanya_desktop.png",
-  "./assets/images/chaitanya_mobile.png",
-  "./assets/images/japa_mala.jpg",
-  "./assets/images/panchatatva_mantra.png",
-  "./assets/images/radhakrishna_desktop.png",
-  "./assets/images/radhakrishna_mobile.png",
-  "./offline.html"
+  "../css/style.css",
+  "./japa_mala.js",
+  "./orientation.js",
+  "../images/chaitanya_desktop.png",
+  "../images/chaitanya_mobile.png",
+  "../images/japa_mala.jpg",
+  "../images/panchatatva_mantra.png",
+  "../images/radhakrishna_desktop.png",
+  "../images/radhakrishna_mobile.png",
+  "../../offline.html"
 ];
 
 self.addEventListener('install', function (event) {
