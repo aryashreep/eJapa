@@ -14,19 +14,19 @@ body{
   background-attachment: fixed;
 }
 #wrapper {
-    position:fixed;
-    z-index: 0;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: transparent;
-    text-align: center;
-    width: 100%;
+  position:fixed;
+  z-index: 0;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  text-align: center;
+  width: 100%;
 }
 button#beadsButton{
-    background-color: #1C3676;
-    border: none;
-    border-radius: 50%;
+  background-color: #1C3676;
+  border: none;
+  border-radius: 50%;
 }
 #beads{
   color: #ffffff;
@@ -40,24 +40,24 @@ button#beadsButton{
   border-radius: 50%;
 }
 button:focus {
-    outline:0;
+  outline:0;
 }
 button.txtBack {
-   background-color: #1C3676;
-   border: none;
-   font-size: 18px;
-   font-weight: bolder;
-   color: #ffffff;
-   border-radius: 15px;
-   padding: 5px;
-   width: 180px;
+  background-color: #1C3676;
+  border: none;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #ffffff;
+  border-radius: 15px;
+  padding: 5px;
+  width: 180px;
 }
 div.btnBack {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 span.beadsStart {
-    font-size: 22px;
-    vertical-align: middle;
+  font-size: 22px;
+  vertical-align: middle;
 }
 /* Ripple effect */
 .ripple {
@@ -133,4 +133,50 @@ span.beadsStart {
     bottom: 0%;
     left: 0%;
     position: absolute;
+  }
+
+  .landscapediv{
+    display: flex;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #006aaf;
+    z-index: 15;
+    pointer-events: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .landscape-flex {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .landscape-bg {
+    background-image: url("../images/rotate.png");
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30%;
+    padding-bottom: 25.5%;
+  }
+  
+  .landscape-text, .landscape-heading {
+    color: #f1f1f1;
+    text-align: center;
+  }
+  
+  .landscape-heading {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  
+  .landscape-text {
+    font-size: 20px;
   }
