@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function() {
 	function reorient(e) {
 		var orientation = window.screen.orientation.type;
 		$("#landscapediv").remove();
