@@ -26,18 +26,13 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-            node-version: '12.x'
+            node-version: '16.x'
       - run: |
             npm install
             npm run build
-            pwd
-            cd dist
-            git config --global user.email "aryashreep@gmail.com" > /dev/null 2>&1
-            git config --global user.name "aryashreep" > /dev/null 2>&1
-            git init
-            git remote add --fetch origin git@github.com:aryashreep/japa.git
-            git checkout --orphan main
-            git add -A
-            git commit --allow-empty -m "Deploy to Japa (`date '+%F %T %Z'`) [ci skip]"
-            git push --force --quiet origin main > /dev/null 2>&1
-            echo "Deployment finished!"
+      - name: Publish generated content to GitHub Pages
+        uses: tsunematsu21/actions-publish-gh-pages@v1.0.1
+        with:
+          dir: dist
+          branch: main
+          token: ${{ secrets.ACCESS_TOKEN }}
