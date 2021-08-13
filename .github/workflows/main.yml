@@ -31,7 +31,7 @@ jobs:
             npm install
             npm run build
       - name: Publish generated content to GitHub Pages
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
       - run: |
             pwd
             ls -l
