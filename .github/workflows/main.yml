@@ -30,9 +30,6 @@ jobs:
       - run: |
             npm install
             npm run build
-      - name: Publish generated content to GitHub Pages
-        uses: actions/checkout@v2
-      - run: |
             cp -r dist/. /tmp/dist/
             cp -r .git /tmp/dist/
             rm -r *
