@@ -33,9 +33,10 @@ jobs:
       - name: Publish generated content to GitHub Pages
         uses: actions/checkout@v2
       - run: |
-            pwd
-            ls -l
-            cd dist
+            cp -r dist/. /tmp/dist/
+            cp -r .git/. /tmp/dist/
+            rm -r *
+            cp -r /tmp/dist/* .
             git config --global user.name 'Aryashree Pritikrishna'
             git config --global user.email 'aryashreep@users.noreply.github.com'
             git checkout --orphan main
