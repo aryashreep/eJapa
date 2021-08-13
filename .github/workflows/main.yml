@@ -31,8 +31,15 @@ jobs:
             npm install
             npm run build
       - name: Publish generated content to GitHub Pages
-        uses: tsunematsu21/actions-publish-gh-pages@v1.0.1
-        with:
-          dir: dist
-          branch: main
-          token: ${{ secrets.ACCESS_TOKEN }}
+      - uses: actions/checkout@v2
+      - run: |
+            pwd
+            ls -l
+            cd dist
+            git config --global user.name 'Aryashree Pritikrishna'
+            git config --global user.email 'aryashreep@users.noreply.github.com'
+            git checkout --orphan main
+            git add -A
+            git commit --allow-empty -m "Deploy to Japa (`date '+%F %T %Z'`) [ci skip]"
+            git push --force --quiet origin main
+            echo "Deployment finished!"
