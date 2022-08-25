@@ -15,6 +15,7 @@ $("#beadsButton").on("click", function () {
     iRounds = isNaN(iRounds) ? 0 : iRounds;
     iBeads = 0;
     iRounds++;
+    $("#beadsButton").addClass("beadsButtonChange");
     $("#beads").css("display", "hidden");
     $("#rounds").text(iRounds);
     $("#beadsButton").html('<span id="beads" style="display: none;"></span><img src="./img/panchatatva_mantra.png" width="180" height="180" id="panchatatva" alt="Panchatatva Mantra" />');

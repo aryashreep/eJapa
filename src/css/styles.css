@@ -38,20 +38,19 @@ button#beadsButton {
   padding-top: 50px;
   padding-bottom: 50px;
   border-radius: 50%;
-  background-color: #1c3676;
+  background-color: #233d7a;
 }
 button:focus {
   outline: 0;
 }
 button.txtBack {
-  background-color: #1c3676;
+  background-color: #233d7a;
   border: none;
   font-size: 18px;
-  font-weight: bolder;
   color: #ffffff;
   border-radius: 15px;
   padding: 5px;
-  width: 180px;
+  width: 140px;
 }
 div.btnBack {
   padding-top: 10px;
@@ -70,7 +69,7 @@ span.beadsStart {
     center/15000%;
 }
 .ripple:active {
-  background-color: #1c3676;
+  background-color: #233d7a;
   background-size: 100%;
   transition: background 0s;
 }
