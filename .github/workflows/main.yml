@@ -28,7 +28,7 @@ jobs:
         with:
             node-version: '16.x'
       - run: |
-            npm install
+            npm install --force
             npm run build
             cp -r dist/. /tmp/dist/
             cp -r .git /tmp/dist/
