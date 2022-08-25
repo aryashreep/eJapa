@@ -24,7 +24,7 @@ body {
   width: 100%;
 }
 button#beadsButton {
-  background-color: #1c3676;
+  background-color: transparent;
   border: none;
   border-radius: 50%;
 }
@@ -38,6 +38,7 @@ button#beadsButton {
   padding-top: 50px;
   padding-bottom: 50px;
   border-radius: 50%;
+  background-color: #1c3676;
 }
 button:focus {
   outline: 0;

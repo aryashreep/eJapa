@@ -11,6 +11,7 @@ $("#beadsButton").on("click", function () {
     iRounds = isNaN(iRounds) ? 0 : iRounds;
     iBeads = 0;
     iRounds++;
+    $("#beadsButton").addClass("beadsButtonChange");
     $("#beads").css("display", "hidden");
     $("#rounds").text(iRounds);
     $("#beadsButton").html(
